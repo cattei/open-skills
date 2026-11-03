@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">规格驱动开发图标</title>
+  <desc id="desc">深色方形背景上，三张叠放的文档页代表从用户场景到规格、计划、任务的文档链，右下角一枚绿色对勾徽章代表验收通过。</desc>
+  <defs>
+    <linearGradient id="bg" x1="110" y1="70" x2="900" y2="960" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#111a2e"/>
+    </linearGradient>
+    <linearGradient id="sheet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f8ff"/>
+      <stop offset="1" stop-color="#d8e4f7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38e8c8" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#38e8c8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1024" height="1024" rx="180" fill="url(#bg)"/>
+
+  <!-- 背景两页（叠放暗示文档链） -->
+  <g opacity="0.5">
+    <rect x="238" y="196" width="420" height="540" rx="34" fill="#2c3f63" transform="rotate(-7 448 466)"/>
+    <rect x="278" y="182" width="420" height="540" rx="34" fill="#3a5178" transform="rotate(-3.5 488 452)"/>
+  </g>
+
+  <!-- 主文档页 -->
+  <g transform="rotate(0)">
+    <rect x="316" y="172" width="424" height="548" rx="36" fill="url(#sheet)"/>
+    <!-- 折角 -->
+    <path d="M 632 172 L 740 280 L 632 280 Z" fill="#b9ccea"/>
+    <path d="M 632 172 L 740 280 L 668 280 Z" fill="#93aed8"/>
+    <!-- 文本行：由粗到细，暗示 13 阶段逐步细化 -->
+    <g fill="#41608f">
+      <rect x="372" y="300" width="248" height="24" rx="12"/>
+      <rect x="372" y="348" width="180" height="20" rx="10" opacity="0.85"/>
+    </g>
+    <g fill="#6f8dbd">
+      <rect x="372" y="404" width="296" height="16" rx="8"/>
+      <rect x="372" y="440" width="240" height="16" rx="8"/>
+      <rect x="372" y="476" width="286" height="16" rx="8"/>
+      <rect x="372" y="512" width="200" height="16" rx="8"/>
+      <rect x="372" y="548" width="262" height="16" rx="8"/>
+      <rect x="372" y="584" width="150" height="16" rx="8"/>
+    </g>
+    <!-- 阶段刻度：13 段 -->
+    <g fill="#4d8bff">
+      <rect x="372" y="638" width="26" height="12" rx="6"/>
+      <rect x="406" y="638" width="26" height="12" rx="6"/>
+      <rect x="440" y="638" width="26" height="12" rx="6"/>
+      <rect x="474" y="638" width="26" height="12" rx="6"/>
+      <rect x="508" y="638" width="26" height="12" rx="6"/>
+      <rect x="542" y="638" width="26" height="12" rx="6"/>
+      <rect x="576" y="638" width="26" height="12" rx="6"/>
+    </g>
+  </g>
+
+  <!-- 验收对勾徽章 -->
+  <circle cx="748" cy="716" r="188" fill="url(#glow)"/>
+  <circle cx="748" cy="716" r="112" fill="#17b98d"/>
+  <circle cx="748" cy="716" r="112" fill="none" stroke="#7fe9c9" stroke-width="8" stroke-opacity="0.75"/>
+  <path d="M 694 716 L 730 752 L 806 676" fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

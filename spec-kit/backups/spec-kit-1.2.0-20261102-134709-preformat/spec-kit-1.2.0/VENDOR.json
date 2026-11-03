@@ -1,0 +1,114 @@
+{
+    "skill":  "spec-kit",
+    "source":  {
+                   "repo":  "github/spec-kit",
+                   "url":  "https://github.com/github/spec-kit",
+                   "commit":  "99e047e9b48c3ecbbc5c3e530fb45bed671960bc",
+                   "ref":  "main",
+                   "license":  "MIT"
+               },
+    "vendoredAt":  "2026-10-29T10:21:51+08:00",
+    "generator":  "0椤圭洰闆嗚鍒?.skills/scripts/vendor-sync.ps1",
+    "skipped":  [
+                    "templates/commands/taskstoissues.md (deprecated upstream)"
+                ],
+    "localAdditions":  [
+                           "references/commands/story.md (local stage: user stories / scenarios)",
+                           "references/commands/impact.md (local stage: affected pages/features/data + business flow)",
+                           "references/commands/accept.md (local stage: acceptance cards / RAC)",
+                           "references/commands/verify.md (local stage: verify + backfill)",
+                           "references/templates/user-story-template.md (local)",
+                           "references/templates/impact-template.md (local)",
+                           "references/templates/acceptance-card-template.md (local)",
+                           "references/xp-ai-acceptance.md (local: AI+XP result-acceptance digest)"
+                       ],
+    "transforms":  [
+                       "strip command YAML frontmatter, keep description in a header note",
+                       "{SCRIPT} -\u003e ",
+                       "python .agents/skills/spec-kit/scripts/speckit_context.py --json",
+                       "{ARGS} -\u003e $ARGUMENTS",
+                       "__SPECKIT_COMMAND_\u003cNAME\u003e__ -\u003e /spec-kit \u003cname\u003e"
+                   ],
+    "files":  [
+                  {
+                      "path":  "references/commands/analyze.md",
+                      "upstream":  "templates/commands/analyze.md",
+                      "sha256":  "e235cff1f7b6f41e8924a0e267d2efb8bc0d48fdbb70c3349b5526df3ac6a4ad"
+                  },
+                  {
+                      "path":  "references/commands/checklist.md",
+                      "upstream":  "templates/commands/checklist.md",
+                      "sha256":  "701db38d8954b41941afa922e18f2a5a88ec2d266ddf85b39621b9862d20a2e7"
+                  },
+                  {
+                      "path":  "references/commands/clarify.md",
+                      "upstream":  "templates/commands/clarify.md",
+                      "sha256":  "bb1e4258cd801260726f5ca2733f1ad17f731a3423108d13555d57c18088dd90"
+                  },
+                  {
+                      "path":  "references/commands/constitution.md",
+                      "upstream":  "templates/commands/constitution.md",
+                      "sha256":  "d2d1e7fc9eeb77b243d276a06a64cc0583b6ed0641f7e2e968b4a2c2f5446dd0"
+                  },
+                  {
+                      "path":  "references/commands/converge.md",
+                      "upstream":  "templates/commands/converge.md",
+                      "sha256":  "b0ea4d29bac29d6f81145a521222a7a61528bffda282e3ce94f20469704b51f0"
+                  },
+                  {
+                      "path":  "references/commands/implement.md",
+                      "upstream":  "templates/commands/implement.md",
+                      "sha256":  "65d5e1f55423703ec819a5aaa1f84098b6ae4b117ab753ee484d6c0c9291106e"
+                  },
+                  {
+                      "path":  "references/commands/plan.md",
+                      "upstream":  "templates/commands/plan.md",
+                      "sha256":  "ee970074e082b00b843d1792ce17abf1468201e5a8393b4591f6979ec2d84e13"
+                  },
+                  {
+                      "path":  "references/commands/specify.md",
+                      "upstream":  "templates/commands/specify.md",
+                      "sha256":  "92f1d4b4d7dc6107e29511a66fe9039f3168fcddfcd08f8df0a131a7b2a1bcba"
+                  },
+                  {
+                      "path":  "references/commands/tasks.md",
+                      "upstream":  "templates/commands/tasks.md",
+                      "sha256":  "dffa5ea01c5e537f86c06d4524ce90f7014c55fec943973d40a388ae867083bc"
+                  },
+                  {
+                      "path":  "references/templates/checklist-template.md",
+                      "upstream":  "templates/checklist-template.md",
+                      "sha256":  "0a92b73edfdfd5c828008fd2abb7aaa77bae0dac6ed7588f1b55e30ecb336d16"
+                  },
+                  {
+                      "path":  "references/templates/constitution-template.md",
+                      "upstream":  "templates/constitution-template.md",
+                      "sha256":  "ce7549540fa45543cca797a150201d868e64495fdff39dc38246fb17bd4024b3"
+                  },
+                  {
+                      "path":  "references/templates/plan-template.md",
+                      "upstream":  "templates/plan-template.md",
+                      "sha256":  "809a9781e3d0150812c6430f488c20eae4090bcc12399feefed3a4eed83eef74"
+                  },
+                  {
+                      "path":  "references/templates/spec-template.md",
+                      "upstream":  "templates/spec-template.md",
+                      "sha256":  "3945437fc35cd30a5b2bf7beea680337c3516826d3efa5a6b92c4a7eca1ba28e"
+                  },
+                  {
+                      "path":  "references/templates/tasks-template.md",
+                      "upstream":  "templates/tasks-template.md",
+                      "sha256":  "a743ccb66ed831f15e24c9753a75ecb57b0a8ded2a3e0ae5080f7478748f6f32"
+                  },
+                  {
+                      "path":  "references/methodology.md",
+                      "upstream":  "spec-driven.md",
+                      "sha256":  "1517eba9868e7066541ffa484009d5eb9c7d8d04bf740dbfd86e5e88c396f0c6"
+                  },
+                  {
+                      "path":  "LICENSE",
+                      "upstream":  "LICENSE",
+                      "sha256":  "2510b446bc1f0cf9702453075d20cd88631e20e5642658edb7325d9c1eb534f7"
+                  }
+              ]
+}

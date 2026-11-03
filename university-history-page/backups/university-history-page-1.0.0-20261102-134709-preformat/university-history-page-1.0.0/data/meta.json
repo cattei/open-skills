@@ -1,0 +1,51 @@
+{
+  "checksums": {
+    "featured-01.json": "bd6f6ebb116dab1340dca7cd81fed1ff0dfbab0914177bf9933561421e644f2c",
+    "featured-02.json": "3076c859ad1f2a7a1f9b913b3fbab106a767d3e475139d32bcd9d29b6b600cb7",
+    "featured-03.json": "9fe72db578a1b5e70e3dbb003e66296d88b171314156ea3cf70d71362d2fa66e",
+    "featured-04.json": "ac2f065b4c237b3af4fe2d3b464b939fbb33c6a56f4a62b5002f5e5be2e2d358",
+    "featured-05.json": "d9ad36c55b163fc3a841c385579d37d2e3cea99e6b37424dd037feef4ae008f8",
+    "featured-06.json": "fa6ab2b1487b75728cb5837aaa15f992a2eed23c43908f6f56d14dfa6f53290a",
+    "index.json": "9c51fad88c16bdd3f9db4812bacf79d0fd0e28e3fa3044c7d9e37cef14f266bf"
+  },
+  "dimensionLabels": {
+    "affiliation": "隶属变更",
+    "college": "学院设置",
+    "degree": "学位点",
+    "discipline": "学科建设",
+    "evaluation": "学科评估",
+    "location": "校址变迁",
+    "name": "校名演变",
+    "policy": "政策影响",
+    "president": "校长更迭",
+    "program": "专业"
+  },
+  "featuredCount": 142,
+  "featuredRule": "985 + 211 + 双一流",
+  "generatedAt": "2026-11-02T13:18:01+08:00",
+  "indexCount": 3016,
+  "shards": [
+    "featured-01.json",
+    "featured-02.json",
+    "featured-03.json",
+    "featured-04.json",
+    "featured-05.json",
+    "featured-06.json"
+  ],
+  "sourceCounts": {
+    "dimensionRows": {
+      "affiliation": 7425,
+      "college": 1925,
+      "degree": 3641,
+      "discipline": 9049,
+      "evaluation": 5008,
+      "location": 7863,
+      "name": 9026,
+      "policy": 43021,
+      "president": 20640,
+      "program": 5284
+    },
+    "universities": 3016
+  },
+  "sourceDir": "C:\\code\\open-project\\Project-UniversityHistory\\software\\src\\data"
+}

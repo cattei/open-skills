@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">知识图谱 RAG 落地方案图标</title>
+  <desc id="desc">深色方形背景上，由若干发光节点与连线构成的知识图谱，图谱中心为一枚向上阶梯箭头，象征分阶段落地上线。</desc>
+  <defs>
+    <linearGradient id="bg" x1="110" y1="70" x2="900" y2="960" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#111a2e"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="180" y1="200" x2="860" y2="880" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38e8c8"/>
+      <stop offset="1" stop-color="#4d8bff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38e8c8" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#38e8c8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1024" height="1024" rx="180" fill="url(#bg)"/>
+
+  <!-- 图谱连线 -->
+  <g stroke="url(#edge)" stroke-opacity="0.85" stroke-width="9" stroke-linecap="round">
+    <line x1="300" y1="300" x2="512" y2="512"/>
+    <line x1="724" y1="300" x2="512" y2="512"/>
+    <line x1="300" y1="724" x2="512" y2="512"/>
+    <line x1="724" y1="724" x2="512" y2="512"/>
+    <line x1="300" y1="300" x2="724" y2="300"/>
+    <line x1="300" y1="724" x2="724" y2="724"/>
+    <line x1="300" y1="300" x2="300" y2="724"/>
+    <line x1="724" y1="300" x2="724" y2="724"/>
+  </g>
+
+  <!-- 外围节点 -->
+  <g fill="#38e8c8">
+    <circle cx="300" cy="300" r="46"/>
+    <circle cx="724" cy="300" r="46"/>
+    <circle cx="300" cy="724" r="46"/>
+    <circle cx="724" cy="724" r="46"/>
+  </g>
+
+  <!-- 中心光晕 + 主节点 -->
+  <circle cx="512" cy="512" r="230" fill="url(#glow)"/>
+  <circle cx="512" cy="512" r="104" fill="#4d8bff"/>
+  <circle cx="512" cy="512" r="104" fill="none" stroke="#a8ccff" stroke-width="7" stroke-opacity="0.7"/>
+
+  <!-- 中心阶梯柱：分阶段落地 -->
+  <g fill="#ffffff">
+    <rect x="448" y="536" width="36" height="36" rx="7"/>
+    <rect x="494" y="500" width="36" height="72" rx="7"/>
+    <rect x="540" y="464" width="36" height="108" rx="7"/>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">配料表判定图标</title>
+  <desc id="desc">深色方形背景上，一张标签卡片列出若干配料项，每项右侧带等级色点：绿色安全、琥珀注意、红色禁用，右侧一枚放大镜表示逐项核对知识库。</desc>
+  <defs>
+    <linearGradient id="bg" x1="110" y1="70" x2="900" y2="960" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#111a2e"/>
+    </linearGradient>
+    <linearGradient id="sheet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6faff"/>
+      <stop offset="1" stop-color="#dbe7f8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38e8c8" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#38e8c8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1024" height="1024" rx="180" fill="url(#bg)"/>
+
+  <!-- 配料标签卡片 -->
+  <rect x="132" y="150" width="500" height="620" rx="42" fill="url(#sheet)"/>
+  <!-- 标题条 -->
+  <rect x="176" y="202" width="182" height="26" rx="13" fill="#41608f"/>
+
+  <!-- 配料行：文字条 + 等级色点（色点右移到卡片内右侧，避开放大镜） -->
+  <g>
+    <!-- 行 1 安全 -->
+    <rect x="176" y="282" width="214" height="22" rx="11" fill="#8ba6cc"/>
+    <circle cx="540" cy="293" r="18" fill="#17b98d"/>
+    <!-- 行 2 注意 -->
+    <rect x="176" y="350" width="266" height="22" rx="11" fill="#8ba6cc"/>
+    <circle cx="540" cy="361" r="18" fill="#f0a52c"/>
+    <!-- 行 3 安全 -->
+    <rect x="176" y="418" width="182" height="22" rx="11" fill="#8ba6cc"/>
+    <circle cx="540" cy="429" r="18" fill="#17b98d"/>
+    <!-- 行 4 禁用 -->
+    <rect x="176" y="486" width="234" height="22" rx="11" fill="#8ba6cc"/>
+    <circle cx="540" cy="497" r="18" fill="#e2554d"/>
+    <!-- 行 5 安全 -->
+    <rect x="176" y="554" width="198" height="22" rx="11" fill="#8ba6cc"/>
+    <circle cx="540" cy="565" r="18" fill="#17b98d"/>
+    <!-- 行 6 待确认（空心环） -->
+    <rect x="176" y="622" width="156" height="22" rx="11" fill="#b6c8e0"/>
+    <circle cx="540" cy="633" r="18" fill="none" stroke="#7d93b5" stroke-width="7"/>
+    <!-- 行 7 安全 -->
+    <rect x="176" y="690" width="222" height="22" rx="11" fill="#8ba6cc"/>
+    <circle cx="540" cy="701" r="18" fill="#17b98d"/>
+  </g>
+
+  <!-- 放大镜：右下角，不与色点重叠 -->
+  <circle cx="770" cy="742" r="168" fill="url(#glow)"/>
+  <g>
+    <circle cx="770" cy="716" r="104" fill="none" stroke="#4d8bff" stroke-width="24"/>
+    <circle cx="770" cy="716" r="104" fill="#4d8bff" fill-opacity="0.10"/>
+    <line x1="844" y1="790" x2="912" y2="858" stroke="#4d8bff" stroke-width="26" stroke-linecap="round"/>
+  </g>
+  <!-- 镜内对勾：核对通过 -->
+  <path d="M 728 716 L 758 746 L 814 690" fill="none" stroke="#7fe9c9" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

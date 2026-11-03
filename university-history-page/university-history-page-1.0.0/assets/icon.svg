@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f3a5f"/>
+      <stop offset="55%" stop-color="#2c4f77"/>
+      <stop offset="100%" stop-color="#3a5f8a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0b458"/>
+      <stop offset="100%" stop-color="#b8892a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- rounded card background -->
+  <rect x="40" y="40" width="944" height="944" rx="132" ry="132" fill="url(#bg)"/>
+
+  <!-- vertical timeline spine -->
+  <line x1="268" y1="214" x2="268" y2="812" stroke="#ffffff" stroke-opacity="0.28" stroke-width="10"/>
+
+  <!-- four timeline nodes, each paired with a text bar -->
+  <g>
+    <circle cx="268" cy="272" r="30" fill="url(#gold)"/>
+    <circle cx="268" cy="272" r="12" fill="#1f3a5f"/>
+    <rect x="352" y="248" width="330" height="30" rx="15" fill="#ffffff" fill-opacity="0.92"/>
+    <rect x="352" y="292" width="196" height="18" rx="9" fill="#ffffff" fill-opacity="0.42"/>
+  </g>
+  <g>
+    <circle cx="268" cy="440" r="26" fill="#2e8b6f"/>
+    <circle cx="268" cy="440" r="10" fill="#1f3a5f"/>
+    <rect x="352" y="420" width="258" height="28" rx="14" fill="#ffffff" fill-opacity="0.88"/>
+    <rect x="352" y="462" width="150" height="16" rx="8" fill="#ffffff" fill-opacity="0.40"/>
+  </g>
+  <g>
+    <circle cx="268" cy="596" r="26" fill="#c2572f"/>
+    <circle cx="268" cy="596" r="10" fill="#1f3a5f"/>
+    <rect x="352" y="576" width="298" height="28" rx="14" fill="#ffffff" fill-opacity="0.88"/>
+    <rect x="352" y="618" width="172" height="16" rx="8" fill="#ffffff" fill-opacity="0.40"/>
+  </g>
+  <g>
+    <circle cx="268" cy="748" r="26" fill="#8a5fa8"/>
+    <circle cx="268" cy="748" r="10" fill="#1f3a5f"/>
+    <rect x="352" y="728" width="222" height="28" rx="14" fill="#ffffff" fill-opacity="0.88"/>
+    <rect x="352" y="770" width="132" height="16" rx="8" fill="#ffffff" fill-opacity="0.40"/>
+  </g>
+
+  <!-- graduation cap emblem, top-right -->
+  <g transform="translate(664 150) scale(1.15)">
+    <path d="M0 46 L96 4 L192 46 L96 88 Z" fill="url(#gold)"/>
+    <path d="M44 70 L44 116 Q96 148 148 116 L148 70 L96 92 Z" fill="#e8bd63"/>
+    <line x1="188" y1="48" x2="188" y2="104" stroke="#b8892a" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="188" cy="116" r="11" fill="#e0b458"/>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+# ─────────────────────────────────────────────────────────
+# payskills/ —— 私有隔离区，永不上传公开库
+# 含：支付宝 AI 按量付费 Pay Skill（SkillHub 商业分发）
+#     历史备份中的内嵌访问令牌
+#     支付联调测试产物（含本机内部绝对路径）
+# 需要单独私有仓库或本地保留，不进入任何公开分发。
+# ─────────────────────────────────────────────────────────
+payskills/
+
+# ── 操作系统 / 编辑器 ──
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+.idea/
+
+# ── 运行与依赖 ──
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# ── 运行时状态与订单 ──
+.state/
+*.state.json
+
+# ── 环境变量（只允许示例文件）──
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ── 凭证与密钥 ──
+*.pem
+*.p12
+*.pfx
+*.keystore
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+*.key
+!**/assets/*.key.svg
+
+# ── 临时产物 ──
+temp/
+tmp/
+*.tmp
+*.log
+*.bak
+*~$*
+
+# ── 压缩包：分发包走 release/ 或对应 skill 目录，避免误提交大文件 ──
+# 注意：各 skill 目录下的 <slug>-<version>.zip 属于分发产物，需保留
+!/*/*.zip
+!/**/backups/**/*.zip
