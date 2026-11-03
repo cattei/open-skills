@@ -58,3 +58,6 @@ tmp/
 # 注意：各 skill 目录下的 <slug>-<version>.zip 属于分发产物，需保留
 !/*/*.zip
 !/**/backups/**/*.zip
+
+# ── 项目本地数据（WorkBuddy 工作记录，非代码）──
+.workbuddy/
